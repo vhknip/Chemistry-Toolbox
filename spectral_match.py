@@ -99,7 +99,7 @@ def match(sample_sig: list,
     norm_sample = vector_norm(mapped_sample)
     norm_ref = vector_norm(mapped_ref)
     
-    return np.dot(norm_sample,norm_ref) * 100
+    return np.dot(norm_sample,norm_ref) * mult
 
 def fwd_match(sample_sig: list,
           sample_mz: list,

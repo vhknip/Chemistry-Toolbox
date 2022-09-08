@@ -24,7 +24,7 @@ This is a personal collection of useful functions for data analysis in chemistry
     * Mass Spectra and other chromatographic data points are exported and formatted as lists.
       * When read in to a dataframe, these are taken in as lists, so conversion before analysis is required.
       
-* To-Do
+## To-Do
   * Add jupyter notebooks showing examples of how functions work
     
 

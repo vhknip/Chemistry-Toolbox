@@ -53,7 +53,7 @@ def spectra_comparison(
     norm_sample_sig = vector_norm(sample_sig)
     norm_ref_sig = vector_norm(ref_sig)
     
-    # makes reference spectra point downards
+    # properly orients reference spectrum downwards
     down_norm_ref_sig = [-1 * value for value in norm_ref_sig]
     
     #match factor calculations
@@ -70,7 +70,6 @@ def spectra_comparison(
     fig.update_layout(
         title = f"<b>{sample_label} vs. {ref_label} Mass Spectra Comparison</b>",
         title_x = 0.5,
-        #xaxis_title= f"<b>m/z-value</b><br>Match Factor: {match_factor}, Reverse Match Factor: {rev_match_factor}, Forward Match Fator: {fwd_match_factor}",
         xaxis_title = '<br>'.join([
              '<b>m/z-value</b>',
              f'Match Factor: {match_factor}',

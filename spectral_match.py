@@ -89,7 +89,7 @@ def match(sample_sig: list,
 
     """
     # construct common basis
-    common_basis = set(sample_mz + ref_mz)
+    common_basis = list(set(sample_mz + ref_mz))
     
     # map both spectra to common basis
     mapped_sample = vector_map(sample_sig, sample_mz, common_basis)

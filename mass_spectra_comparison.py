@@ -57,9 +57,9 @@ def spectra_comparison(
     down_norm_ref_sig = [-1 * value for value in norm_ref_sig]
     
     #match factor calculations
-    match_factor = round(match(sample_sig,sample_mz,ref_sig,ref_mz),3)
-    fwd_match_factor = round(fwd_match(sample_sig,sample_mz,ref_sig,ref_mz),3)
-    rev_match_factor = round(rev_match(sample_sig,sample_mz,ref_sig,ref_mz),3)
+    match_factor = round(match(sample_sig,sample_mz,ref_sig,ref_mz, mode = 'direct'),3)
+    fwd_match_factor = round(match(sample_sig,sample_mz,ref_sig,ref_mz,mode ='forward'),3)
+    rev_match_factor = round(match(sample_sig,sample_mz,ref_sig,ref_mz, mode ='reverse'),3)
     
     # plotly visualization
     fig = go.Figure()
